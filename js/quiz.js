@@ -6,6 +6,38 @@ var questions = [
     ['In what year was UofL established?', 1798],
 ] /* Answers are all numbers intentionally to keep things simple. */
 
+/*
+Another way you could write the above object...
+
+var questions = [
+    {
+        question: 'What number President is Donald J. Trump?'
+        answer: 45
+    },
+    {
+        question: 'In what year did UofL win its third national championship?'
+        answer: 2013
+    },
+    {
+        question: 'In what year was UofL established?'
+        answer: 1798
+    },
+];
+
+Just keep in mind that if you made these changes, you'd also need to simplify some lines below:
+
+CHANGE question = questions[i][0]
+TO question = questions[i].question
+
+&
+
+CHANGE answer = questions[i][1]
+TO answer = questions[i].answer
+
+(Whether you do this boils down to a style pref. Both work the same.)
+*/
+
+
 var correctAnswers = 0; /* This is to track the # of correct answers */
 var question; /* Now, we're just calling all variables, all in one place, which is best practice... */
 var answer;
