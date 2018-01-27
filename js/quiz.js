@@ -21,7 +21,7 @@ var questions = [
     {
         question: 'In what year was UofL established?'
         answer: 1798
-    },
+    }
 ];
 
 Just keep in mind that if you made these changes, you'd also need to simplify some lines below:
